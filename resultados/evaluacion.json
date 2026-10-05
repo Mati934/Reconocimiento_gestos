@@ -1,0 +1,672 @@
+{
+  "resumen": {
+    "modelo": "ResNet-18 preentrenada (ImageNet), fine-tuning completo",
+    "clases": "ok, otros, paz, pulgar_arriba, stop",
+    "fotos train / test": "440 / 111",
+    "tamaño de imagen": "320 x 320",
+    "optimizador": "AdamW",
+    "learning_rate": 0.0001,
+    "batch_size": 16,
+    "épocas": 10,
+    "exactitud test": 0.8468,
+    "dispositivo": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "pytorch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "precision mixta": false,
+    "segundos entrenamiento": 65.12
+  },
+  "historial_train": [
+    {
+      "epoca": 1,
+      "perdida": 1.052040212804621,
+      "exactitud": 0.615909090909091
+    },
+    {
+      "epoca": 2,
+      "perdida": 0.41200512810186907,
+      "exactitud": 0.8954545454545455
+    },
+    {
+      "epoca": 3,
+      "perdida": 0.19213731573386625,
+      "exactitud": 0.95
+    },
+    {
+      "epoca": 4,
+      "perdida": 0.13309499113397164,
+      "exactitud": 0.9727272727272728
+    },
+    {
+      "epoca": 5,
+      "perdida": 0.0878563821993091,
+      "exactitud": 0.9818181818181818
+    },
+    {
+      "epoca": 6,
+      "perdida": 0.06833707906983115,
+      "exactitud": 0.9886363636363636
+    },
+    {
+      "epoca": 7,
+      "perdida": 0.06607484201138669,
+      "exactitud": 0.9840909090909091
+    },
+    {
+      "epoca": 8,
+      "perdida": 0.07871293730356477,
+      "exactitud": 0.9840909090909091
+    },
+    {
+      "epoca": 9,
+      "perdida": 0.060999627614563165,
+      "exactitud": 0.9795454545454545
+    },
+    {
+      "epoca": 10,
+      "perdida": 0.06483016601679,
+      "exactitud": 0.9840909090909091
+    }
+  ],
+  "clases": [
+    "ok",
+    "otros",
+    "paz",
+    "pulgar_arriba",
+    "stop"
+  ],
+  "matriz_confusion": [
+    [
+      12,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      15,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      1,
+      24,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      19,
+      0
+    ],
+    [
+      2,
+      0,
+      1,
+      0,
+      24
+    ]
+  ],
+  "predicciones_test": [
+    {
+      "archivo": "data/test\\ok\\ok_0095.jpg",
+      "real": "ok",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0096.jpg",
+      "real": "ok",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0098.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0164.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0191.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0193.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0199.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0200.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0201.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0203.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0219.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0241.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0242.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\ok\\ok_0249.jpg",
+      "real": "ok",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0105.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0175.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0177.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0189.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0190.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0226.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0227.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0229.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0232.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0264.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0523.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0524.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0525.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0526.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\otros\\otros_0527.jpg",
+      "real": "otros",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0014.jpg",
+      "real": "paz",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0015.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0016.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0017.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0018.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0041.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0042.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0043.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0044.jpg",
+      "real": "paz",
+      "prediccion": "otros"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0159.jpg",
+      "real": "paz",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0160.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0166.jpg",
+      "real": "paz",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0228.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0236.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0243.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0244.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0246.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0250.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0378.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0380.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0381.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0413.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0414.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0415.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0416.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0417.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0418.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0419.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0420.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0421.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0422.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0423.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0424.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0425.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0426.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\paz\\paz_0427.jpg",
+      "real": "paz",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0001.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0002.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0003.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0004.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0005.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0006.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0007.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0008.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0009.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0010.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0011.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0012.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0100.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0127.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0128.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0129.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0130.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0135.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\pulgar_arriba\\pulgar_arriba_0163.jpg",
+      "real": "pulgar_arriba",
+      "prediccion": "pulgar_arriba"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0035.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0036.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0037.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0038.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0039.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0040.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0062.jpg",
+      "real": "stop",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0082.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0085.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0086.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0134.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0136.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0138.jpg",
+      "real": "stop",
+      "prediccion": "paz"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0139.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0141.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0143.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0153.jpg",
+      "real": "stop",
+      "prediccion": "ok"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0162.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0168.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0176.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0195.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0196.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0206.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0235.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0255.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0379.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    },
+    {
+      "archivo": "data/test\\stop\\stop_0382.jpg",
+      "real": "stop",
+      "prediccion": "stop"
+    }
+  ]
+}

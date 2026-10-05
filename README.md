@@ -1,4 +1,4 @@
-Hola buenas tardes
+Integrantes : Matias Carcamo, Israel González
 
 ## Fotos de gestos
 
